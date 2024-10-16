@@ -34,7 +34,7 @@ POST http://localhost:8080/api/auth/activation HTTP/1.1
 Content-Type: {{contentType}}
 
 {
-    "code":"376252"
+    "code":"570954"
 }
 
 #### User sign in
