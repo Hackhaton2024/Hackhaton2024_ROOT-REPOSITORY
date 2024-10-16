@@ -1,0 +1,9 @@
+[submodule "Hackhaton2024_conceptionFolder"]
+	path = Hackhaton2024_conceptionFolder
+	url = https://github.com/Hackhaton2024/Hackhaton2024_conceptionFolder.git
+[submodule "Hackathon2024_Frontend"]
+	path = Hackathon2024_Frontend
+	url = https://github.com/Hackhaton2024/Hackathon2024_Frontend.git
+[submodule "Hackhaton2024_backend"]
+	path = Hackhaton2024_backend
+	url = https://github.com/Hackhaton2024/Hackhaton2024_backend.git
