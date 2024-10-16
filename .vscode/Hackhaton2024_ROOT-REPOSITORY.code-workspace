@@ -1,0 +1,41 @@
+{
+	"folders": [
+		{
+			"path": "./..",
+			"name": "Hackhaton2024_ROOT-REPOSITORY"
+		}
+	],
+	"settings": {
+		"java.compile.nullAnalysis.mode": "disabled",
+		"java.configuration.updateBuildConfiguration": "automatic",
+		"sqltools.connections": [
+			{
+				"mysqlOptions": {
+					"authProtocol": "default"
+				},
+				"previewLimit": 50,
+				"server": "127.0.0.1",
+				"port": 3306,
+				"driver": "MariaDB",
+				"name": "inote",
+				"database": "inote",
+				"username": "moch",
+				"askForPassword": true
+			}
+		]
+	},
+	"extensions": {
+		"recommendations": [
+			// SQL
+			"mtxr.sqltools",
+			"mtxr.sqltools-driver-mysql",
+			// REST API
+			"humao.rest-client",
+			// Git
+			"mhutchie.git-graph",
+			"tgosystems.togglebracketguides",
+			"vscode-icons-team.vscode-icons",
+			"alefragnani.bookmarks",
+					]
+	}
+}

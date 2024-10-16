@@ -35,6 +35,13 @@ L'Equipe De Choc's project root repository
 ./runAPI.sh
 ```
 
+#### Accès à la boite mail simulée
+
+```bash
+http://localhost:5000
+
+```
+
 #### Lancement de l’interface openAPI (Swagger) de l’API depuis le navigateur
 
 ```

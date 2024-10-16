@@ -1,9 +1,13 @@
+# requests.http
+# T.NGUYEN
+# 2024-10-17
+
 @contentType = application/json
-@pseudo = mochirzuki
-@username = mochirezuki@inote.fr
+@pseudo = sangoku
+@username = sangoku@hackathon.fr
 @password = @Tsu@hil145!
 @passwordBis = chichi@@YYY14646_
-@email = mochizuki@inote.fr
+@email = sangoku@hackathon.fr
 
 # USER ACCOUNT
 #=================================================================
@@ -30,7 +34,7 @@ POST http://localhost:8080/api/auth/activation HTTP/1.1
 Content-Type: {{contentType}}
 
 {
-    "code":"453583"
+    "code":"376252"
 }
 
 #### User sign in
@@ -68,7 +72,7 @@ Content-Type: {{contentType}}
 
 {
     "email":"{{email}}",
-    "code":"782725",
+    "code":"799524",
     "password": "{{passwordBis}}"
 }
 
