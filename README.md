@@ -48,3 +48,11 @@ http://localhost:5000
 http://localhost:8080/swagger-ui/index.html
 ```
 
+#### Clonage global du projet et téléchargement du contenu de ses sous-modules
+
+```
+git clone https://github.com/Hackhaton2024/Hackhaton2024_ROOT-REPOSITORY.git
+git submodule update --init --recursive
+git submodule update --remote --merge
+```
+
