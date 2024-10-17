@@ -9,6 +9,9 @@
 @passwordBis = chichi@@YYY14646_
 @email = sangoku@hackathon.fr
 
+@franceTravailIdClient = PAR_hackathon_1d0a1fd538207c226f0fcf1e79ee5c3768f7df9947f195b8689116659a450e2e
+@franceTravailSecretKey = 5ff6ced7f38e38ad3601ecb747e7f32e66e4e623dc3dbc0ce9a4dc8040a58017
+
 # USER ACCOUNT
 #=================================================================
 
@@ -130,3 +133,34 @@ GET http://localhost:8080/api/users/get-all-users HTTP/1.1
 Content-Type: {{contentType}}
 Authorization: bearer {{tokenBearer}}
 
+
+#FRANCE TRAVAIL
+#========================================================================
+### Generate France Travail Access Token
+POST https://entreprise.francetravail.fr/connexion/oauth2/access_token?realm=%2Fpartenaire
+Content-Type: application/x-www-form-urlencoded
+
+grant_type=client_credentials
+&client_id={{franceTravailIdClient}}
+&client_secret={{franceTravailSecretKey}}
+&scope=api_offresdemploiv2 api_romeov2 o2dsoffre
+
+### Obtain the closest ROME job title from a free text entry.
+POST https://api.francetravail.io/partenaire/romeo/v2/predictionMetiers
+Content-Type: {{contentType}}
+Authorization: Bearer oF6eq2OOKrscCeOuUlQ82gTs0ag
+
+{
+  "appellations": [
+    {
+      "intitule": "murs briques béton", 
+      "identifiant": "123456",
+      "contexte": ""
+    }
+  ],
+  "options": {
+    "nomAppelant": "francetravail",
+    "nbResultats": 2,
+    "seuilScorePrediction": 0.7
+  }
+}
