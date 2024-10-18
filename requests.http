@@ -164,3 +164,9 @@ Authorization: Bearer oF6eq2OOKrscCeOuUlQ82gTs0ag
     "seuilScorePrediction": 0.7
   }
 }
+
+### Get FranceTravail Romeo response from free input text
+POST http://localhost:8080/api/romeo HTTP/1.1
+Content-Type: {{contentType}}
+
+"j'aime les ordinateurs"
